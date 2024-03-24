@@ -1,0 +1,5 @@
+.env
+
+llama2-13b-estopia.Q4_K_M.gguf
+
+node_modules/
