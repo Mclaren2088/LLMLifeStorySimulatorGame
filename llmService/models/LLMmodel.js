@@ -33,14 +33,14 @@ class CustomChatPromptWrapper extends ChatPromptWrapper {
     }
 }
 
-const model = new LlamaModel({
-    modelPath: 'llama2-13b-estopia.Q4_K_M.gguf'
-});
-const context = new LlamaContext({ model });
-const session = new LlamaChatSession({
-    context,
-    promptWrapper: new CustomChatPromptWrapper()
-});
+// const model = new LlamaModel({
+//     modelPath: 'llama2-13b-estopia.Q4_K_M.gguf'
+// });
+// const context = new LlamaContext({ model });
+// const session = new LlamaChatSession({
+//     context,
+//     promptWrapper: new CustomChatPromptWrapper()
+// });
 
 // const q1 = "Hi there, how are you?";
 // console.log("User: " + q1);
@@ -58,4 +58,4 @@ const session = new LlamaChatSession({
 //         console.log("AI: " + a2);
 //     });
 
-export default model;
+export default CustomChatPromptWrapper;
